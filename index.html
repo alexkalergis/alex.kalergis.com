@@ -4,61 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to My GitHub Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Fira Code', monospace;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #fff;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
         header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
+            width: 100%;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            right: 0;
         }
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        header a {
+            margin-left: 1rem;
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        header a:hover {
+            color: #3498db;
+        }
+        .container {
+            text-align: center;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 2rem;
         }
         h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
         }
         p {
+            font-size: 1.2rem;
             line-height: 1.6;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+            max-width: 600px;
+            margin: 0 auto;
         }
         footer {
             text-align: center;
             padding: 1rem 0;
-            background-color: #333;
-            color: #fff;
+            width: 100%;
             position: absolute;
             bottom: 0;
-            width: 100%;
+            background-color: #fff;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My GitHub Page</h1>
+        <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank">LinkedIn</a>
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
     </header>
-    <main>
-        <h2>Hello, world!</h2>
-        <p>Welcome to my personal GitHub Pages site. This is a minimal and user-friendly design that is clean and easy to navigate.</p>
-        <p>Feel free to explore and check out my <a href="https://github.com/yourusername">GitHub profile</a> for more projects and repositories.</p>
-    </main>
+    <div class="container">
+        <img src="path/to/your/photo.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>Welcome to My GitHub Page</h1>
+        <p>Hello, world! Welcome to my personal GitHub Pages site. This is a minimal and user-friendly design that is clean and easy to navigate.</p>
+    </div>
     <footer>
         <p>&copy; 2024 Your Name</p>
     </footer>
