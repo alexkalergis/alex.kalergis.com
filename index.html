@@ -13,6 +13,7 @@
             background-color: #fff;
             color: #333;
             display: flex;
+            flex-direction: column;
             min-height: 100vh;
         }
         header {
@@ -37,47 +38,31 @@
         main {
             display: flex;
             flex: 1;
-            width: 100%;
-        }
-        .sidebar {
-            flex: 0 0 200px; /* Sidebar width */
-            padding: 2rem;
-            background-color: #f4f4f4;
-        }
-        .content {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            text-align: center;
+            width: 100%;
             padding: 2rem;
+        }
+        .about-me {
+            max-width: 200px;
+            margin-right: 2rem;
+            font-size: 1.2rem;
+            line-height: 1.6;
         }
         .profile-pic {
             width: 200px;
             height: 200px;
             border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 2rem;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            max-width: 600px;
-            margin: 0 auto;
         }
         footer {
             text-align: center;
             padding: 0.1rem 0; /* Reduced padding */
             width: 100%;
-            position: absolute;
-            bottom: 0;
             background-color: #fff;
             font-size: 0.5rem; /* Reduced font size */
+            position: absolute;
+            bottom: 0;
         }
     </style>
 </head>
@@ -87,14 +72,10 @@
         <a href="https://github.com/alexkalergis" target="_blank">GitHub</a>
     </header>
     <main>
-        <div class="sidebar">
-            <h2>About Me</h2>
+        <div class="about-me">
             <p>Hello, world! Welcome to my personal GitHub Pages site. This is a minimal and user-friendly design that is clean and easy to navigate.</p>
         </div>
-        <div class="content">
-            <img src="IMG_1989.jpg" alt="Profile Picture" class="profile-pic">
-            <h1>Welcome to my page</h1>
-        </div>
+        <img src="IMG_1989.jpg" alt="Profile Picture" class="profile-pic">
     </main>
     <footer>
         <p>&copy; 2024 Alexandros Kalergis</p>
